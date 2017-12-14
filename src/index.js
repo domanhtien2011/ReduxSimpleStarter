@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import YTSeach from 'youtube-api-search';
@@ -14,18 +15,26 @@ class App extends Component {
       videos: [],
       selectedVideo: null
     };
+    this.videoSearch('programming debug');
+  }
+
+  videoSearch(term) {
     YTSeach({
       key: API_KEY,
-      term: 'popping dance'
+      term: term
     }, (videos) => {
       this.setState({videos: videos, selectedVideo: videos[0]});
     })
   }
 
   render() {
+    const videoSearch = _.debounce((term) => {
+      this.videoSearch(term)
+    }, 300)
+
     return (
       <div>
-        <SearchBar/>
+        <SearchBar onSearchTermChange={videoSearch}/>
         <VideoDetail video={this.state.selectedVideo}/>
         <VideoList
           videos={this.state.videos}
