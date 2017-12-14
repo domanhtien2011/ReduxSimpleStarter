@@ -5,12 +5,12 @@ import YTSeach from 'youtube-api-search';
 import SearchBar from './components/search_bar'
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
-
-const API_KEY = "AIzaSyAPJjQ7g8VsvFVFH7deYa3qQGYsdewjq-E";
+require('dotenv').config();
 
 class App extends Component {
   constructor(props) {
     super(props);
+    console.log(process.env);
     this.state = {
       videos: [],
       selectedVideo: null
@@ -20,7 +20,7 @@ class App extends Component {
 
   videoSearch(term) {
     YTSeach({
-      key: API_KEY,
+      key: process.env.YOUTUBE_API_KEY,
       term: term
     }, (videos) => {
       this.setState({videos: videos, selectedVideo: videos[0]});

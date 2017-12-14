@@ -1,4 +1,7 @@
 module.exports = {
+  node: {
+    fs: 'empty'
+  },
   entry: [
     './src/index.js'
   ],
@@ -24,3 +27,4 @@ module.exports = {
     contentBase: './'
   }
 };
+
