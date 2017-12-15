@@ -1,25 +1,35 @@
-# ReduxSimpleStarter
+# Reactjs Practice - *Youtube API*
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+**Youtube API** is an app that I write to learn reactjs with redux.
 
-### Getting Started
+Time spent: **4.5** hours spent in total
 
-There are two methods for getting started with this repo.
+## User Stories
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+The following functionality is completed:
 
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
+- [x] User can search for particular clip on youtube.
+- [ x] The search functionality doesn't kick in immediately, but a wait for a while to eleminate the laggy experience when user keeps typing in the search bar.
+- [x ] User can see a particular youtube clip inside of the ap.
+- [x ] User will see a list of default clips 
+- [x] Reponsive design with boostrap
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+## Notes
 
-```
-> npm install
-> npm start
-```
+May add redux later to manage state better...
+
+## License
+
+    Copyright [2017] [Tien Manh Do]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
