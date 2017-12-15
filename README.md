@@ -9,9 +9,9 @@ Time spent: **4.5** hours spent in total
 The following functionality is completed:
 
 - [x] User can search for particular clip on youtube.
-- [ x] The search functionality doesn't kick in immediately, but a wait for a while to eleminate the laggy experience when user keeps typing in the search bar.
-- [x ] User can see a particular youtube clip inside of the ap.
-- [x ] User will see a list of default clips 
+- [x] The search functionality doesn't kick in immediately, but a wait for a while to eleminate the laggy experience when user keeps typing in the search bar.
+- [x] User can see a particular youtube clip inside of the ap.
+- [x] User will see a list of default clips 
 - [x] Reponsive design with boostrap
 
 ## Notes
